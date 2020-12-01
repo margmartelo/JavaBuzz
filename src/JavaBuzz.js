@@ -11,7 +11,20 @@ class Javabuzz {
   return this._isDivisibleBy(number, 5);
  }
 
- isDivisibleByThreeAndFive(number) {
+ isDivisibleByFifteen(number) {
   return this._isDivisibleBy(number, 15);
  }
+
+ says(number) {
+    if (this.isDivisibleByFifteen(number)) {
+      return "Javabuzz";
+    }
+    if (this.isDivisibleByThree(number)) {
+      return "Java";
+    }
+    if (this.isDivisibleByFive(number)) {
+       return "Buzz";
+    }
+    return number;
+  }
 }
