@@ -40,7 +40,7 @@ describe('Javabuzz', function() {
   describe('knows when a number is NOT', function() {
 
     it('divisible by 3 and 5', function() {
-      expect(javabuzz.isDivisibleByThree(12)).toBe(false);
+      expect(javabuzz.isDivisibleByThree(11)).toBe(false);
     });
   });
 });
